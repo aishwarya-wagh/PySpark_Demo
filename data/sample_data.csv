@@ -1,0 +1,11 @@
+name,age,department,salary,gender,date_string
+Alice,34,Engineering,120000,F,2023-01-15
+Bob,45,HR,90000,M,2022-11-20
+Charlie,29,Marketing,75000,M,2023-02-10
+David,23,Engineering,60000,M,2023-03-05
+Eve,38,HR,110000,F,2023-01-25
+Frank,50,Marketing,130000,M,2022-12-30
+Grace,42,Engineering,105000,F,2022-10-12
+Hank,28,HR,80000,M,2023-03-15
+Ivy,31,Marketing,92000,F,2023-01-08
+Jack,36,Engineering,97000,M,2023-02-22
