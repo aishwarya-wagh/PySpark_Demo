@@ -1,5 +1,5 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import avg, to_date, year, month, dayofmonth, udf
+from pyspark.sql.functions import avg, to_date, year, month, dayofmonth, udf, col
 from pyspark.sql.types import StringType
 from pyspark.sql.window import Window
 from pyspark.sql.functions import rank
@@ -21,6 +21,16 @@ selected_df = df.select("name", "age")
 # Renaming Columns
 renamed_df = df.withColumnRenamed("age", "years")
 
+# Using Alias for Columns
+# Rename 'age' to 'years' using alias
+aliased_df = df.select(col("age").alias("years"))
+
+# Creating new columns with alias
+# Add 10 to the 'age' column and name it 'age_plus_10' using alias
+aliased_new_col_df = df.select(col("name"), col("age"), (col("age") + 10).alias("age_plus_10"))
+# Show DataFrames
+aliased_df.show()
+aliased_new_col_df.show()
 # Adding Columns
 df_with_new_col = df.withColumn("age_plus_10", df.age + 10)
 
@@ -65,7 +75,7 @@ def to_uppercase(name):
 uppercase_udf = udf(to_uppercase, StringType())
 df_with_uppercase_name = df.withColumn("name_uppercase", uppercase_udf(df.name))
 
-# Show final DataFrame
+
 df_with_uppercase_name.show()
 
 # Stop Spark session
