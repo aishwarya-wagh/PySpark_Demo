@@ -1,0 +1,11 @@
+EmployeeID,Name,Age,DepartmentID,Country,Salary,HireDate,NullableColumn
+1,Alice,30,101,USA,70000,2020-01-15,
+2,Bob,25,102,UK,50000,2019-07-23,Yes
+3,Catherine,27,102,Canada,60000,2021-03-05,No
+4,David,40,103,Germany,75000,2018-11-30,Yes
+5,Emma,35,104,Australia,80000,2017-05-17,
+6,Frank,29,102,USA,65000,2020-12-01,Yes
+7,George,33,105,UK,55000,2019-08-10,No
+8,Helen,28,103,Canada,72000,2020-09-15,Yes
+9,Ian,45,104,USA,85000,2021-01-10,No
+10,Jane,31,105,Germany,69000,2018-03-20,Yes
