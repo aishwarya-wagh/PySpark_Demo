@@ -1,0 +1,6 @@
+DepartmentID,DepartmentName,ManagerID
+101,HR,1
+102,IT,2
+103,Finance,3
+104,Marketing,4
+105,Sales,5
